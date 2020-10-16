@@ -1,0 +1,204 @@
+body{
+	background-color: var(--background);
+	margin: 0px;
+}
+/* --------------------------------------CSS Variables------------------------*/
+:root{
+	/*-------------------colors------------------*/
+	--white: white;
+	--background: #0c1027;
+	--brand-color: #edf143;
+	/*-----------X--------colors--------X----------*/
+	/*----------------------fonts----------------*/
+	--defFont: monospace;
+	/*----------------X-----fonts---------X---------*/
+}
+/*-----------Global------------------------------------------*/
+.horiz-list{
+	list-style: none;
+	flex-direction: row;
+	display: flex;
+	margin: 0px;
+}
+.horiz-list li{
+	color: var(--white);
+	font-family: var(--defFont);
+	margin-top: 2%;
+}
+.brand-icon a{
+	color: var(--brand-color);
+	font-size: 2rem;margin-right: .5rem;
+}
+.brand-icon{
+	font-size: 2rem;
+	margin-top: -.5rem;
+}
+.favourites{
+	margin-left: 4%;
+	margin-right: 10%;
+	font-size: 1.8rem;
+	margin-top: 1%;
+}
+/*--------X---Global-----------------X-------------------------*/
+
+
+
+/* --------------------------------------CSS Variables------------------------*/
+
+/* ------------------------------------navbar-------------------------------- */
+nav{
+	margin-left: 4vw;
+	width: 100vw;
+	height: 7vh;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.searchbar{
+	margin-left: 30%;
+	margin-right: 10%
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  background: #12193e;
+  padding: 5px;
+  height: 26px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-family: var(--defFont);
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border:none;
+  background: #12193e;
+  text-align: center;
+  color: var(--white);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 18%;
+  margin-top: 1%;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+}
+::placeholder{
+	color: white;
+	font-family: var(--defFont);
+}
+.bell{
+	margin: 4% 4% 0% 2%;
+}
+.bell a{
+	color: var(--white);
+	font-size: 2rem;
+}
+.user{
+	margin: 4% 4% 0% 2%;
+}
+.user a{
+	color: var(--white);
+	font-size: 2rem;
+}
+
+
+
+/* ----------------------XX--------------navbar-----------------XX--------------- */
+
+/* --------------------------------------------------------container----------------------------------------------------------*/
+#container{
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* ---------------------------------------X-----------------container--------------------------X--------------------------------*/
+
+/*-----------------------------------------main---------------------------------------------------------*/
+main{
+	margin: 5vh 0vw 0vh 5vw;
+	height: fit-content;
+	width: 67vw;
+	background-color: white;
+}
+
+/*-----------------------------------popular-------------------------------------*/
+#popular{
+	margin: 0vh 3vw 5vh 0vw;
+	height: 40vh;
+	width: 62vw;
+	background-color: pink;
+}
+/*---------------------X--------------popular-----------------X--------------------*/
+
+/*-----------------------------------aside-------------------------------------*/
+/*---------------------X--------------aside--------------------X-----------------*/
+/*-----------------------------------latest-------------------------------------*/
+#latest{
+	height: 40vh;
+	width: 62vw;
+	margin: 0vh 3vw 0vh 0vw;
+	background-color: orange;
+}
+/*------------------------X-----------latest---------------X----------------------*/
+/*-----------------------------------artists-------------------------------------*/
+#artists{
+	height: 22vh;
+	width: 62vw;
+	margin: 5vh 3vw 0vh 0vw;
+	background-color: blue;
+}
+/*---------------------X--------------artists------------------X-------------------*/
+/*-----------------------------------genre-------------------------------------*/
+#genre{
+	height: 22vh;
+	width: 62vw;
+	margin: 5vh 3vw 0vh 0vw;
+	background-color: green;
+}
+/*---------------------X--------------genre-----------------X--------------------*/
+/*-----------------------------------english-------------------------------------*/
+#english{
+	height: 22vh;
+	width: 62vw;
+	margin: 5vh 3vw 0vh 0vw;
+	background-color: grey;
+}
+/*---------------------X--------------english--------------X-----------------------*/
+/*-----------------------------------hindi-------------------------------------*/
+#hindi{
+	height: 22vh;
+	width: 62vw;
+	margin: 5vh 3vw 0vh 0vw;
+	background-color: red;
+}
+/*-------------X----------------------hindi-----------------X--------------------*/
+
+
+/*------------X----------------------------main-------------------------------------X--------------------*/
+/*----------------------------------------aside-------------------------------------------*/
+aside{
+	width: 22vw;
+	height: 200vh;
+	background-color: yellow;
+	margin-top: 5vh;
+	margin-left: 2vw;
+}
+/*-------------X---------------------------aside--------------------X-----------------------*/
