@@ -165,7 +165,7 @@ main{
 	height: 68vh;
 	width: 62vw;
 	/*background-color: pink;*/
-	background-image: url(https://i.pinimg.com/originals/32/0e/a6/320ea634c5bb19ebe8e57f0a9669aa76.jpg);
+	background-image: url(../assets/populari1.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -649,6 +649,9 @@ aside{
     }
 }
 @media(max-width: 1000px){
+	#popular{
+		width: 95%;
+	}
 	.artist-content{
 		width: 28vw;
 	}
@@ -735,6 +738,7 @@ aside{
     }
 }
 @media(max-width: 500px){
+	
 	.artist-content {
     width: 50vw;
     }
