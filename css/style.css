@@ -184,7 +184,7 @@ main{
 	flex-direction: row;
 }
 .latest-head{
-	color: white;
+	color: var(--brand-color);
 	font-family: var(--defFont);
 	font-size: 2rem;
 	width: 60vw;
