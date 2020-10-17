@@ -165,9 +165,13 @@ main{
 	height: 68vh;
 	width: 62vw;
 	/*background-color: pink;*/
-	background-image: url(../assets/populari1.jpg);
+	/*background-image: url(../assets/populari1.jpg);*/
 	background-size: cover;
 	background-position: center;
+}
+#popular img{
+	height: 100%;
+	width: 100%;
 }
 /*---------------------X--------------popular-----------------X------------https://wallpapercave.com/wp/wp4401241.jpg--------*/
 
@@ -320,20 +324,26 @@ main{
 	margin-top: .5vh;
 	margin-bottom: .5vh
 }
-#artist-img1{
-	background-image: url(../assets/artist1.png);
+#artist-img1 img{
+	/*background-image: url(../assets/artist1.png);*/
+	height: 100%;
+	width: 100%;
 }
-#artist-img2{
-	background-image: url(../assets/artist2.png);
+#artist-img2 img{
+	height: 100%;
+	width: 100%;
 }
-#artist-img3{
-	background-image: url(../assets/artist3.png);
+#artist-img3 img{
+	height: 100%;
+	width: 100%;
 }
-#artist-img4{
-	background-image: url(../assets/artist4.png);
+#artist-img4 img{
+	height: 100%;
+	width: 100%;
 }
-#artist-img5{
-	background-image: url(../assets/artist5.png);
+#artist-img5 img{
+	height: 100%;
+	width: 100%;
 }
 .artist-text{
 	color: var(--white);
