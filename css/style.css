@@ -22,6 +22,7 @@ body{
 	flex-direction: row;
 	display: flex;
 	margin: 0px;
+	margin-top: 4vh;
 }
 .horiz-list li{
 	color: var(--white);
@@ -40,7 +41,7 @@ body{
 	margin-left: 4%;
 	margin-right: 10%;
 	font-size: 1.8rem;
-	margin-top: 1%;
+	margin-top: 0%;
 }
 .favourites:hover{
 	font-size: 1.9rem;
@@ -163,7 +164,7 @@ main{
 	margin: 0vh 3vw 5vh 0vw;
 	height: 68vh;
 	width: 62vw;
-	background-color: pink;
+	/*background-color: pink;*/
 	background-image: url(https://i.pinimg.com/originals/32/0e/a6/320ea634c5bb19ebe8e57f0a9669aa76.jpg);
 	background-size: cover;
 	background-position: center;
@@ -420,6 +421,7 @@ main{
 }
 /*-------------X----------------------popular albums-----------------X--------------------*/
 /*------------------------------------audio-box-------------------------------------------*/
+
 #play{
 	margin-top: 10vh;
 	margin-left: 35vw;
@@ -442,7 +444,7 @@ aside{
 	flex-wrap: wrap;
 }
 #qhead1{
-	color: var(--white);
+	color: var(--brand-color);
 	font-size: 2rem;
 	font-family: var(--defFont);
 	margin-bottom: 2rem;
@@ -457,7 +459,7 @@ aside{
 	font-size: 1.4rem;
 	color: var(--brand-color);
 	font-family: var(--defFont);
-	margin-left: 20.5rem;
+	margin-left: 17.5rem;
 	margin-right: .5rem;
 }
 #qhead22{
@@ -574,3 +576,185 @@ aside{
 	background-image: url(../assets/qi16.jpg);
 }
 /*-------------X---------------------------aside--------------------X-----------------------*/
+/*---------------------------------------------------Media Queries--------------------------------------*/
+@media(max-width: 1450px){
+	.text-up{
+		font-size: 1.1rem;
+	}
+	.text-down{
+		font-size: 1rem;
+	}
+	#qhead21{
+	    font-size: 1.2rem;
+	    margin-left: .5rem;
+	    margin-right: .5rem;
+    }
+    #qhead22{
+	font-size: 1.2rem;
+    }
+    #qhead1{
+    	font-size: 1.55rem;
+    }
+    .qelementHeart{
+    	font-size: 1.6rem;
+    }
+    .qelementHeart:hover{
+    	font-size: 1.7rem;
+    }
+    .brand-icon{
+    	font-size: 1.3rem;
+    }
+    .brand-icon a{
+    	font-size: 1.3rem;
+    }
+    .favourites{
+    	font-size: 1.3rem;
+    }
+    .favourites:hover{
+	font-size: 1.32rem;
+	margin-right: 9.6%;
+    }
+    .bell a {
+    font-size: 1.3rem;
+    }
+    .bell a:hover{
+    font-size: 1.32rem;
+    }
+    .user a{
+    font-size: 1.3rem;
+    }
+    .user a:hover{
+    font-size: 1.32rem;
+    }
+    .artist-content{
+    	width: 15vw;
+    }
+    .latest-head{
+    	font-size: 1.5rem;
+    }
+    .artist-text{
+    	font-size: 1.1rem;
+    }
+    .latest-text1{
+    	font-size: 1.4rem;
+    }
+    .latest-text2{
+    	font-size: 1.1rem;
+    }
+    .latest-icon1{
+    	font-size: 1rem;
+    }
+    .latest-icon-dur{
+    	font-size: 1rem;
+    }
+}
+@media(max-width: 1000px){
+	.artist-content{
+		width: 28vw;
+	}
+	#container{
+		display: block;
+	}
+	aside{
+		width: 95vw;
+	}
+	.text-up{
+		font-size: 1.35rem;
+	}
+	.text-down{
+		font-size: 1.25rem;
+	}
+	.qelementText{
+		width: 62%;
+		margin-left: 8%;
+	}
+	.qelement{
+		margin-left: 10%;
+		width: 90%;
+	}
+	.qelementheart{
+		width: 8%;
+	}
+	#qhead1{
+		margin: auto;
+		font-size: 1.8rem;
+	}
+	#qhead2{
+		visibility: hidden;
+	}
+	main{
+		width: 95vw;
+	}
+	#genre{
+		width: 90vw;
+	}
+	#pahari{
+		width: 90vw;
+	}
+	#artists{
+		width: 90vw;
+	}
+	#albums{
+		width: 90vw;
+	}
+	#latest{
+		width: 90vw;
+	}
+	.latest-content{
+		width: 80vw;
+	}
+	.latest-img{
+		width: 35vw;
+		margin-right: 8vw;
+	}
+	.latest-text{
+		width: 35vw;
+	}
+	.searchbar{
+		visibility: collapse;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.bell a {
+    font-size: 1.1rem;
+    }
+    .bell a:hover{
+    font-size: 1.12rem;
+    }
+    .user a{
+    font-size: 1.1rem;
+    }
+    .user a:hover{
+    font-size: 1.12rem;
+    }
+    .favourites{
+    	margin-right: 4%;
+    }
+    nav{
+    	margin-left: 0px;
+    }
+}
+@media(max-width: 500px){
+	.artist-content {
+    width: 50vw;
+    }
+    #genre{
+    	justify-content: center;
+    }
+    .latest-head{
+    	text-align: center;
+    }
+    #pahari{
+		justify-content: center;
+	}
+	#artists{
+		justify-content: center;
+	}
+	#albums{
+		justify-content: center;
+	}
+	#latest{
+		justify-content: center;
+	}
+}
+/*--------------X-------------------------------------Media Queries-------------X-------------------------*/
