@@ -45,6 +45,7 @@ body{
 .favourites:hover{
 	font-size: 1.9rem;
 	cursor: pointer;
+	margin-right: 9.6%;
 }
 .circular:hover{
 	box-shadow: 0rem 0rem 0.375rem 0.25rem rgba(230,196,196,0.3);
@@ -307,11 +308,16 @@ main{
 	cursor: pointer;
 }
 .artist-img{
-	height: 20vh;
+	height: 17.5vh;
 	background-size: cover;
 	background-position: center;
 	margin-top: 2.5vh;
 	margin-bottom: 1vh;
+}
+.artist-img:hover{
+	height: 20vh;
+	margin-top: .5vh;
+	margin-bottom: .5vh
 }
 #artist-img1{
 	background-image: url(../assets/artist1.png);
@@ -361,22 +367,58 @@ main{
 	background-image: url(../assets/genre-img5.jpg);
 }
 /*---------------------X--------------genre-----------------X--------------------*/
-/*-----------------------------------english-------------------------------------*/
-#english{
-	height: 22vh;
+/*-----------------------------------pahari songs-------------------------------------*/
+#pahari{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: fit-content;
 	width: 62vw;
 	margin: 5vh 3vw 0vh 0vw;
-	background-color: grey;
+	/*background-color: grey;*/
 }
-/*---------------------X--------------english--------------X-----------------------*/
-/*-----------------------------------hindi-------------------------------------*/
-#hindi{
-	height: 22vh;
+#pahari-img1{
+	background-image: url(../assets/qi11.jpg);
+}
+#pahari-img2{
+	background-image: url(../assets/pahariimg2.png);
+}
+#pahari-img3{
+	background-image: url(../assets/pahariimg3.jpg);
+}
+#pahari-img4{
+	background-image: url(../assets/pahariimg4.jpg);
+}
+#pahari-img5{
+	background-image: url(../assets/pahariimg5.jpg);
+}
+/*---------------------X--------------pahari songs--------------X-----------------------*/
+/*-----------------------------------popular albums-------------------------------------*/
+#albums{
+	height: fit-content;
 	width: 62vw;
 	margin: 5vh 3vw 0vh 0vw;
-	background-color: red;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/*background-color: red;*/
 }
-/*-------------X----------------------hindi-----------------X--------------------*/
+#album-img1{
+	background-image: url(../assets/albumi1.png);
+}
+#album-img2{
+	background-image: url(../assets/albumi2.jpg);
+}
+#album-img3{
+	background-image: url(../assets/albumi3.jpg);
+}
+#album-img4{
+	background-image: url(../assets/albumi4.jpg);
+}
+#album-img5{
+	background-image: url(../assets/albumi5.jpg);
+}
+/*-------------X----------------------popular albums-----------------X--------------------*/
 
 
 /*------------X----------------------------main-------------------------------------X--------------------*/
