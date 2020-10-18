@@ -1,6 +1,7 @@
 body{
 	background-color: var(--background);
 	margin: 0px;
+	user-select:none;
 }
 /* --------------------------------------CSS Variables------------------------*/
 :root{
@@ -172,18 +173,60 @@ main{
 }
 
 /*-----------------------------------popular-------------------------------------*/
+[type=radio]{
+	display: none;
+}
 #popular{
-	margin: 0vh 3vw 5vh 0vw;
-	height: 68vh;
+	margin: 5vh 3vw 5vh 0vw;
+	height: 48vh;
+	
 	width: 62vw;
 	/*background-color: pink;*/
 	/*background-image: url(../assets/populari1.jpg);*/
-	background-size: cover;
-	background-position: center;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
 }
-#popular img{
-	height: 100%;
-	width: 100%;
+#popular label{
+	margin: auto;
+	width: 65%;
+	height: fit-content;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	transition: transform 0.4s ease;
+}
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3{
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+	transform: translate3d(-30%,0,-200px);
+}
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4{
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,.3),0 2px 2px 0 rgba(0,0,0,.2);
+	transform: translate3d(-15%,0,-100px);
+}
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide2, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5{
+	box-shadow: 0 13px 25px 0 rgba(0,0,0,.3),0 11px 7px 0 rgba(0,0,0,.19);
+	transform: translate3d(0,0,0);
+}
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide3, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1{
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,.3),0 2px 2px 0 rgba(0,0,0,.2);
+	transform: translate3d(-15%,0,-100px);
+}
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2{
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+	transform: translate3d(30%,0,-200px);
 }
 /*---------------------X--------------popular-----------------X------------https://wallpapercave.com/wp/wp4401241.jpg--------*/
 
@@ -608,6 +651,9 @@ aside{
 /*-------------X---------------------------aside--------------------X-----------------------*/
 /*---------------------------------------------------Media Queries--------------------------------------*/
 @media(max-width: 1450px){
+	#popular{
+		height: 40vh;
+	}
 	.text-up{
 		font-size: 1.1rem;
 	}
@@ -641,8 +687,7 @@ aside{
     	font-size: 1.3rem;
     }
     .favourites:hover{
-	font-size: 1.32rem;
-	margin-right: 9.6%;
+    	font-size: 1.32rem;
     }
     .bell a {
     font-size: 1.3rem;
@@ -681,6 +726,7 @@ aside{
 @media(max-width: 1000px){
 	#popular{
 		width: 95%;
+		height: 35vh;
 	}
 	.artist-content{
 		width: 28vw;
@@ -760,15 +806,19 @@ aside{
     .user a:hover{
     font-size: 1.12rem;
     }
-    .favourites{
-    	margin-right: 4%;
-    }
+    
     nav{
     	margin-left: 0px;
     }
 }
+@media(max-width: 750px){
+	#popular{
+		height: 25vh;
+	}
 @media(max-width: 500px){
-	
+	#popular{
+		height: 17vh;
+	}
 	.artist-content {
     width: 50vw;
     }
