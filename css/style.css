@@ -51,6 +51,18 @@ body{
 .circular:hover{
 	box-shadow: 0rem 0rem 0.375rem 0.25rem rgba(230,196,196,0.3);
 }
+.artist-img{
+	height: 17.5vh;
+	background-size: cover;
+	background-position: center;
+	margin-top: 2.5vh;
+	margin-bottom: 1vh;
+}
+.artist-img:hover{
+	height: 20vh;
+	margin-top: .5vh;
+	margin-bottom: .5vh
+}
 /*--------X---Global-----------------X-------------------------*/
 
 
@@ -188,13 +200,14 @@ main{
 	flex-direction: row;
 }
 .latest-head{
-	color: var(--brand-color);
+	color: var(--red);
 	font-family: var(--defFont);
 	font-size: 2rem;
 	width: 60vw;
 	margin-top: 1vh;
 	margin-left: 2vw;
 	height: fit-content;
+	font-weight: bold;
 }
 .latest-content{
 	width: 28vw;
@@ -312,38 +325,20 @@ main{
 .artist-content:hover{
 	cursor: pointer;
 }
-.artist-img{
-	height: 17.5vh;
+.artist-img0{
+	
 	background-size: cover;
 	background-position: center;
 	margin-top: 2.5vh;
 	margin-bottom: 1vh;
 }
-.artist-img:hover{
+.artist-img0 img{
+	width: 100%;
+}
+.artist-img0:hover{
 	height: 20vh;
 	margin-top: .5vh;
 	margin-bottom: .5vh
-}
-#artist-img1 img{
-	/*background-image: url(../assets/artist1.png);*/
-	height: 100%;
-	width: 100%;
-}
-#artist-img2 img{
-	height: 100%;
-	width: 100%;
-}
-#artist-img3 img{
-	height: 100%;
-	width: 100%;
-}
-#artist-img4 img{
-	height: 100%;
-	width: 100%;
-}
-#artist-img5 img{
-	height: 100%;
-	width: 100%;
 }
 .artist-text{
 	color: var(--white);
@@ -414,9 +409,33 @@ main{
 	flex-direction: row;
 	/*background-color: red;*/
 }
-#album-img1{
+.artist-img{
 	background-image: url(../assets/albumi1.png);
+	position: relative;
 }
+.artist-img :not(img){
+	
+	
+	color: white;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: .3s;
+	font-size: 3rem;
+	color: white;
+}
+.er{
+	position: absolute;
+	top:35%;
+}
+.artist-img:hover{
+	opacity: 0.7;
+}
+.artist-img:hover :not(img){
+	opacity: 1;
+}
+
 #album-img2{
 	background-image: url(../assets/albumi2.jpg);
 }
@@ -454,10 +473,11 @@ aside{
 	flex-wrap: wrap;
 }
 #qhead1{
-	color: var(--brand-color);
+	color: var(--red);
 	font-size: 2rem;
 	font-family: var(--defFont);
 	margin-bottom: 2rem;
+	font-weight: bold;
 }
 #qhead2{
 	display: flex;
@@ -770,5 +790,15 @@ aside{
 	#latest{
 		justify-content: center;
 	}
+	body{
+		background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+
+	}
 }
 /*--------------X-------------------------------------Media Queries-------------X-------------------------*/
+/*
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+*/
