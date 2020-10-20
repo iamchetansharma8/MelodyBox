@@ -2,6 +2,10 @@ body{
 	background-color: var(--background);
 	margin: 0px;
 	user-select:none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+	background-attachment: fixed;
 }
 /* --------------------------------------CSS Variables------------------------*/
 :root{
@@ -14,7 +18,7 @@ body{
 	--lightgrey:lightgrey;
 	/*-----------X--------colors--------X----------*/
 	/*----------------------fonts----------------*/
-	--defFont: monospace;
+	--defFont: sans-serif;
 	/*----------------X-----fonts---------X---------*/
 }
 /*-----------Global------------------------------------------*/
@@ -196,7 +200,7 @@ main{
 	left: 0;
 	right: 0;
 	cursor: pointer;
-	transition: transform 0.4s ease;
+	transition: transform 0.4s ease-in-out;
 }
 #s1:checked ~ #slide4, #s2:checked ~ #slide5,
 #s3:checked ~ #slide1, #s4:checked ~ #slide2,
@@ -243,7 +247,7 @@ main{
 	flex-direction: row;
 }
 .latest-head{
-	color: var(--red);
+	color: var(--white);
 	font-family: var(--defFont);
 	font-size: 2rem;
 	width: 60vw;
@@ -446,7 +450,7 @@ main{
 #albums{
 	height: fit-content;
 	width: 62vw;
-	margin: 5vh 3vw 0vh 0vw;
+	margin: 5vh 3vw 20vh 0vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -495,11 +499,96 @@ main{
 /*------------------------------------audio-box-------------------------------------------*/
 
 #play{
-	margin-top: 10vh;
-	margin-left: 10vw;
+	display: flex;
+	flex-direction: row;
+	background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+	height: fit-content;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
 }
-#play audio{
-	margin: auto;
+#song_des{
+	margin-left: 5%;
+	width: 20%;
+	
+	display: flex;
+	flex-direction: row;
+}
+#controls{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+#sound{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#sound div{
+	margin-right: 2%;
+}
+#sound div a{
+	color: var(--white);
+}
+#song_photo{
+	width: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#song_photo img{
+	height: 100%;
+	width: 100%;
+}
+#song_text{
+	width: 50%;
+	color: var(--white);
+	font-family: var(--defFont);
+	margin-top: 4%;
+	margin-left: 3%;
+
+	font-size: 1.4rem;
+}
+#controls-up{
+	display: flex;
+	flex-direction: row;
+	height: 45%;
+	margin-top: 3%;
+	justify-content: space-around;
+}
+#controls-up a{
+	color: var(--white);
+	font-size: 1.5rem;
+}
+#controls-up a:hover{
+	color: var(--lightgrey);
+}
+#controls-down{
+	display: flex;
+	flex-direction: row;
+	height: 40%;
+	margin-top: 2%;
+	justify-content: center;
+}
+.time{
+	color: var(--white);
+	font-size: 1.3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slidecontainer{
+	width: 60%;
 }
 /*--------------X----------------------audio-box-------------------X------------------------*/
 
@@ -516,7 +605,7 @@ aside{
 	flex-wrap: wrap;
 }
 #qhead1{
-	color: var(--red);
+	color: var(--white);
 	font-size: 2rem;
 	font-family: var(--defFont);
 	margin-bottom: 2rem;
@@ -651,9 +740,6 @@ aside{
 /*-------------X---------------------------aside--------------------X-----------------------*/
 /*---------------------------------------------------Media Queries--------------------------------------*/
 @media(max-width: 1450px){
-	#popular{
-		height: 40vh;
-	}
 	.text-up{
 		font-size: 1.1rem;
 	}
@@ -724,6 +810,15 @@ aside{
     }
 }
 @media(max-width: 1000px){
+	#sound3{
+		margin-left: 4%;
+	}
+	#song_des{
+		width: 40%;
+	}
+	#sound{
+		width: 20%;
+	}
 	#popular{
 		width: 95%;
 		height: 35vh;
@@ -731,12 +826,11 @@ aside{
 	.artist-content{
 		width: 28vw;
 	}
-	#container{
-		display: block;
-	}
 	aside{
 		width: 95vw;
+		margin-bottom: 25vh;
 	}
+	
 	.text-up{
 		font-size: 1.35rem;
 	}
@@ -810,12 +904,39 @@ aside{
     nav{
     	margin-left: 0px;
     }
+    #song_text{
+    	font-size: 1.1rem;
+    }
 }
 @media(max-width: 750px){
 	#popular{
+		width: 100%;
 		height: 25vh;
 	}
+	#song_text{
+    	font-size: 1rem;
+    }
+}
 @media(max-width: 500px){
+	#sound{
+		visibility: collapse;
+	}
+	#song_text{
+    	font-size: .9rem;
+    }
+	#song_photo{
+		width: 50%;
+	}
+	#song_des{
+		width: 50%;
+	}
+	#controls{
+		width: 80%;
+		margin-left: 5%;
+	}
+	.time{
+		font-size: 1rem;
+	}
 	#popular{
 		height: 17vh;
 	}
@@ -827,6 +948,7 @@ aside{
     }
     .latest-head{
     	text-align: center;
+    	color: var(--red);
     }
     #pahari{
 		justify-content: center;
@@ -840,12 +962,16 @@ aside{
 	#latest{
 		justify-content: center;
 	}
-	body{
+	 body{
 		background-color: #7f5a83;
-background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-
-
-	}
+        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    }
+    #qhead1{
+    	color: var(--red);
+    }
+    #controls-up a{
+    	font-size: 1.25rem;
+    }
 }
 /*--------------X-------------------------------------Media Queries-------------X-------------------------*/
 /*

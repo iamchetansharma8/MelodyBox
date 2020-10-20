@@ -46,19 +46,19 @@
 		<input type="radio" name="slider" id="s4">
 		<input type="radio" name="slider" id="s5">
 		<label for="s1" id="slide1">
-			<img src="./assets/populari1.jpg" height="100%" width="100%">
+			<img class="circular" src="./assets/populari1.jpg" height="100%" width="100%">
 		</label>
 		<label for="s2" id="slide2">
-			<img src="./assets/populari2.jpg" height="100%" width="100%">
+			<img class="circular" src="./assets/populari2.jpg" height="100%" width="100%">
 		</label>
 		<label for="s3" id="slide3">
-			<img src="./assets/populari3.jpg" height="100%" width="100%">
+			<img class="circular" src="./assets/populari3.jpg" height="100%" width="100%">
 		</label>
 		<label for="s4" id="slide4">
-			<img src="./assets/populari4.jpg" height="100%" width="100%">
+			<img class="circular" src="./assets/populari4.jpg" height="100%" width="100%">
 		</label>
 		<label for="s5" id="slide5">
-			<img src="./assets/populari5.jpg" height="100%" width="100%">
+			<img class="circular" src="./assets/populari5.jpg" height="100%" width="100%">
 		</label>
 	</section>	
 	<section id="latest">
@@ -411,9 +411,55 @@
 		</div>
 	</aside>
     <!-- -------------------------------X--------------------aside--------------------------------X---------------------------- -->
-    <section id="play">
-		<audio src="./assets/sound1.mp3" controls></audio>
+   <section id="play">
+		<div id="song_des">
+			<div id="song_photo">
+				<img class="circular" src="./assets/qi9.jpg">
+			</div>
+			<div id="song_text">Best Song Ever</div>
+			<div class="qelementHeart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+        <div id="controls">
+	        <div id="controls-up">
+	        	<a href="#"><i class="fa fa-retweet"></i></a>
+	            <a href="#"><i class="fa fa-backward"></i></a>
+	            <a href="#"><i class="fa fa-pause hiu"></i></a>
+	            <a href="#"><i class="fa fa-forward"></i></a>
+	            <a href="#"><i class="fa fa-random"></i></a>
+	        </div>
+	        <div id="controls-down">
+                <!-- current time -->
+                <div class="time">
+                    0:44
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    3:58
+                </div>
+            </div>
+        </div>
+        <div id="sound">
+            <div>
+        		<a href="#"><i class="fas fa-volume-up"></i></a>
+        	</div>
+        	<div class="slidecontainer" style="width:30%;">
+               <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div id="sound3">
+        	    <a href="#"><i class="fas fa-list-ul"></i></a>
+            </div>
+        </div>
 	</section>
     </div>
 </body>
 </html>
+<!-- <a class="grey-out" href="#"><i class="fa fa-retweet"></i></a>
+	        <a href="#"><i class="fa fa-backward"></i></a>
+	        <a href="#"><i class="fa fa-pause hiu"></i></a>
+	        <a href="#"><i class="fa fa-forward"></i></a>
+	        <a href="#"><i class="fa fa-random"></i></a>
