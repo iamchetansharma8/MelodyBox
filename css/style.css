@@ -373,19 +373,20 @@ main{
 	cursor: pointer;
 }
 .artist-img0{
-	
 	background-size: cover;
 	background-position: center;
 	margin-top: 2.5vh;
 	margin-bottom: 1vh;
+	overflow: hidden;
 }
 .artist-img0 img{
 	width: 100%;
+	transition: transform .2s;
+
 }
-.artist-img0:hover{
-	height: 20vh;
-	margin-top: .5vh;
-	margin-bottom: .5vh
+.artist-img0 img:hover{
+	transform: scale(1.5);
+
 }
 .artist-text{
 	color: var(--white);
@@ -533,13 +534,19 @@ main{
 	color: var(--white);
 }
 #song_photo{
+	overflow: hidden;
 	width: 20%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
+
 #song_photo img{
 	height: 100%;
 	width: 100%;
+	transition: transform .2s;
+}
+#song_photo img:hover{
+	transform: scale(1.5);
 }
 #song_text{
 	width: 50%;
