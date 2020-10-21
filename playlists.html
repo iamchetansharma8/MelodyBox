@@ -67,9 +67,172 @@
 	<!---------------------XX------------------------main------------------XX-------------------------->
 	<!---------------------------------------------aside-------------------------------------------->
 	<aside>
-		
+		<div id="aside1">
+			<div class="asidehead">Popular Songs</div>
+			<div class="aside1container">
+				<div class="aside1content">
+					<div class="serial">1</div>
+					<div class="asideimg"><img src="./assets/aside11.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Shallow</div>
+						<div class="text-down">FEAT. Bradley Cooper</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">2</div>
+					<div class="asideimg"><img src="./assets/aside12.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Million Reasons</div>
+						<div class="text-down">Joanne 2016</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">3</div>
+					<div class="asideimg"><img src="./assets/aside13.png"></div>
+					<div class="asidetext">
+						<div class="text-up">Paparazzi</div>
+						<div class="text-down">The Fame 2008</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">4</div>
+					<div class="asideimg"><img src="./assets/aside14.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Telephone</div>
+						<div class="text-down">FEAT. Beyonce</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">5</div>
+					<div class="asideimg"><img src="./assets/aside15.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Sour Candy</div>
+						<div class="text-down">Chromatica 2020</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="aside2">
+			<div class="asidehead">Other Artists</div>
+			<div class="aside1container">
+				<div class="aside1content">
+					<div class="serial">1</div>
+					<div class="asideimg"><img src="./assets/aside21.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Bruno Mars</div>
+						<div class="text-down">American Singer</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">2</div>
+					<div class="asideimg"><img src="./assets/aside22.jpeg"></div>
+					<div class="asidetext">
+						<div class="text-up">Taylor Swift</div>
+						<div class="text-down">American Singer</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">3</div>
+					<div class="asideimg"><img src="./assets/aside23.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Ariana Grande</div>
+						<div class="text-down">American Singer</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">4</div>
+					<div class="asideimg"><img src="./assets/aside24.webp"></div>
+					<div class="asidetext">
+						<div class="text-up">Katy Perry</div>
+						<div class="text-down">American Singer</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+				<div class="aside1content">
+					<div class="serial">5</div>
+					<div class="asideimg"><img src="./assets/aside25.jpg"></div>
+					<div class="asidetext">
+						<div class="text-up">Selena Gomez</div>
+						<div class="text-down">American Singer</div>
+					</div>
+					<div class="aside1icon">
+						<i class="fas fa-play"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 	</aside>
 	<!---------------------XX------------------------aside------------------XX-------------------------->
+	<section id="play">
+		<div id="song_des">
+			<div id="song_photo">
+				<img class="circular" src="./assets/qi9.jpg">
+			</div>
+			<div id="song_text">Best Song Ever</div>
+			<div class="qelementHeart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+        <div id="controls">
+	        <div id="controls-up">
+	        	<a href="#"><i class="fa fa-retweet"></i></a>
+	            <a href="#"><i class="fa fa-backward"></i></a>
+	            <a href="#"><i class="fa fa-pause hiu"></i></a>
+	            <a href="#"><i class="fa fa-forward"></i></a>
+	            <a href="#"><i class="fa fa-random"></i></a>
+	        </div>
+	        <div id="controls-down">
+                <!-- current time -->
+                <div class="time">
+                    0:44
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    3:58
+                </div>
+            </div>
+        </div>
+        <div id="sound">
+            <div>
+        		<a href="#"><i class="fas fa-volume-up"></i></a>
+        	</div>
+        	<div class="slidecontainer" style="width:30%;">
+               <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div id="sound3">
+        	    <a href="#"><i class="fas fa-list-ul"></i></a>
+            </div>
+        </div>
+	</section>
     </div>
 </body>
 </html>

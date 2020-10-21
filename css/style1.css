@@ -260,7 +260,7 @@ main{
          .btn-grad1 {
          	font-family: var(--defFont);
 	        font-size: 1.1rem;
-	m       font-weight: 400;
+	        font-weight: 400;
             margin: 20px;
             padding: 10px 35px;
             text-align: center;
@@ -294,5 +294,210 @@ aside{
 	width: 30vw;
 	margin-left: 2.5vw;
 	margin-right: 2.5vw;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20vh;
+}
+#aside1{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+}
+.asidehead{
+	font-size: 1.7rem;
+	color: var(--white);
+	font-family: var(--defFont);
+}
+.aside1container{
+	margin-top: 1vh;
+	width: 30vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.aside1content{
+	margin-top: 1vh;
+	width: 30vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+.serial{
+	font-size: 1.2rem;
+	color: var(--white);
+	font-family: var(--defFont);
+}
+.asideimg{
+	height: 9vh;
+	width: 5vw;
+	margin-left: 1vw;
+	overflow: hidden;
+}
+.asideimg:hover{
+	filter: brightness(50%);
+	cursor: pointer;
+}
+.asideimg img:hover{
+	transform: scale(1.5);
+}
+.aside1icon{
+	color: var(--white);
+	font-size: 1.5rem;
+	margin-left: 2vw;
+	width: 4vw;
+	margin-top: 2vh;
+}
+.aside1icon:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+}
+.asideimg img{
+	width: 100%;
+	height: 100%;
+	transition: transform .2s ease-in-out;
+}
+.asidetext{
+	margin-left: 2vw;
+	display: flex;
+	flex-direction: column;
+	width: 15vw;
+}
+.text-up{
+	height: 50%;
+	padding-top: 3%;
+	font-family: var(--defFont);
+	color: var(--white);
+	font-size: 1.6rem;
+}
+.text-up:hover{
+	color: var(--red);
+}
+.text-down{
+	height: 50%;
+	font-family: var(--defFont);
+	color: var(--lightgrey);
+	font-size: 1.3rem;
+}
+#aside2{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	margin-top: 4vh;
 }
 /*-------------------------XX--------------------aside---------------XX-----------------------------*/
+/*------------------------------------audio-box-------------------------------------------*/
+
+#play{
+	display: flex;
+	flex-direction: row;
+	/*background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);*/
+	background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: fit-content;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+#song_des{
+	margin-left: 5%;
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+}
+#controls{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+#sound{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#sound div{
+	margin-right: 2%;
+}
+#sound div a{
+	color: var(--white);
+}
+#song_photo{
+	overflow: hidden;
+	width: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#song_photo img{
+	height: 100%;
+	width: 100%;
+	transition: transform .2s;
+}
+#song_photo img:hover{
+	transform: scale(1.5);
+}
+#song_text{
+	width: 50%;
+	color: var(--white);
+	font-family: var(--defFont);
+	margin-top: 4%;
+	margin-left: 3%;
+
+	font-size: 1.4rem;
+}
+#controls-up{
+	display: flex;
+	flex-direction: row;
+	height: 45%;
+	margin-top: 3%;
+	justify-content: space-around;
+}
+#controls-up a{
+	color: var(--white);
+	font-size: 1.5rem;
+}
+#controls-up a:hover{
+	color: var(--lightgrey);
+}
+#controls-down{
+	display: flex;
+	flex-direction: row;
+	height: 40%;
+	margin-top: 2%;
+	justify-content: center;
+}
+.time{
+	color: var(--white);
+	font-size: 1.3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slidecontainer{
+	width: 60%;
+}
+.qelementHeart{
+	height: 100%;
+	width: 20%;
+	font-size: 2.3rem;
+	color: var(--lightgrey);
+	padding-top: 2%;
+	/*background-color: violet;*/
+}
+.qelementHeart:hover{
+	font-size: 2.4rem;
+	color: var(--red);
+}
+/*--------------X----------------------audio-box-------------------X------------------------*/
