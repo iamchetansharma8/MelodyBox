@@ -386,7 +386,7 @@ main{
 }
 .artist-img0 img:hover{
 	transform: scale(1.5);
-
+	filter: brightness(50%);
 }
 .artist-text{
 	color: var(--white);
@@ -421,6 +421,69 @@ main{
 	background-image: url(../assets/genre-img5.jpg);
 }
 /*---------------------X--------------genre-----------------X--------------------*/
+/*-------------------------------------------------------mood-----------------------------------------------------*/
+#mood{
+	background-image: linear-gradient( 292.9deg,  rgba(254,105,241,1) 28.8%, rgba(182,44,248,1) 70.4% );
+	width: 62vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	
+	margin: 5vh 3vw 0vh 0vw;
+	overflow: hidden;
+}
+#moodhead{
+	text-align: center;
+	margin: 8vh 1vw 2vh 2vw;
+	background-image: radial-gradient( circle 965px at 0.4% 97.8%,  rgba(255,188,15,1) 0%, rgba(255,115,0,1) 44.2%, rgba(154,0,255,1) 100.2% );
+	height: 11vh;
+	color: var(--white);
+	font-size: 2rem;
+	font-family: var(--defFont);
+	width: 20vw;
+	padding-top: 8vh;
+	transition: transform .2s ease-in-out;
+}
+#moodhead:hover{
+	transform: scale(1.35);
+	background-image: radial-gradient( circle 929px at 0.6% 1.3%,  rgba(248,251,10,1) 0%, rgba(248,47,47,1) 82.6% );
+	color: var(--background-color);
+}
+#moodcontent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: fit-content;
+	margin-bottom: 5vh;
+	margin-top: 4vh;
+}
+.moodcontentimgs{
+	width: 10vw;
+	position: relative;
+	margin-left: 3vw;
+	height: 15vh;
+	
+	overflow: hidden;
+	margin-top: 2vh;
+}
+.mooditext{
+	position: absolute;
+	font-size: 1.5rem;
+	color: var(--white);
+	top: 0%;
+	left: 0%;
+}
+.moodcontentimgs img{
+	width: 100%;
+	height: 100%;
+	transition: transform .2s ease-in-out;
+}
+.moodcontentimgs img:hover{
+	transform: scale(1.5);
+	filter: brightness(50%);
+}
+/*----------------------X---------------------------------mood-------------------------X----------------------------*/
+
 /*-----------------------------------pahari songs-------------------------------------*/
 #pahari{
 	display: flex;
@@ -817,6 +880,12 @@ aside{
     }
 }
 @media(max-width: 1000px){
+	#mood{
+		width: 90vw;
+	}
+	.moodcontentimgs{
+		width: 18vw;
+	}
 	#sound3{
 		margin-left: 4%;
 	}
@@ -925,6 +994,14 @@ aside{
     }
 }
 @media(max-width: 500px){
+	.moodcontentimgs{
+		width: 28vw;
+	}
+	#moodhead{
+		width: 40vw;
+		font-size: 1.2rem;
+		margin-top: 18vh;
+	}
 	#sound{
 		visibility: collapse;
 	}
