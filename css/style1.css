@@ -1,0 +1,298 @@
+body{
+	background-color: var(--background);
+	margin: 0px;
+	user-select:none;
+}
+/* --------------------------------------CSS Variables------------------------*/
+:root{
+	/*-------------------colors----------#0c1027--------*/
+	--white: white;
+	--background: #121212;
+	--brand-color: #23d061;
+	--red:#f3d055;
+	--search:#161616;
+	--lightgrey:lightgrey;
+	/*-----------X--------colors--------X----------*/
+	/*----------------------fonts----------------*/
+	--defFont: sans-serif;
+	/*----------------X-----fonts---------X---------*/
+}
+/*-----------Global------------------------------------------*/
+.horiz-list{
+	list-style: none;
+	flex-direction: row;
+	display: flex;
+	margin: 0px;
+	margin-top: 4vh;
+}
+.horiz-list li{
+	color: var(--white);
+	font-family: var(--defFont);
+	margin-top: 2%;
+}
+.brand-icon a{
+	color: var(--brand-color);
+	font-size: 2rem;margin-right: .5rem;
+}
+.brand-icon{
+	font-size: 2rem;
+	margin-top: -.5rem;
+}
+.favourites{
+	margin-left: 4%;
+	margin-right: 10%;
+	font-size: 1.8rem;
+	margin-top: 0%;
+}
+.favourites:hover{
+	font-size: 1.9rem;
+	cursor: pointer;
+	margin-right: 9.6%;
+}
+.circular:hover{
+	box-shadow: 0rem 0rem 0.375rem 0.25rem rgba(230,196,196,0.3);
+}
+.artist-img{
+	height: 17.5vh;
+	background-size: cover;
+	background-position: center;
+	margin-top: 2.5vh;
+	margin-bottom: 1vh;
+}
+.artist-img:hover{
+	height: 20vh;
+	margin-top: .5vh;
+	margin-bottom: .5vh
+}
+/*--------X---Global-----------------X-------------------------*/
+/* ------------------------------------navbar-------------------------------- */
+nav{
+	margin-left: 4vw;
+	width: 95vw;
+	height: 7vh;
+}
+
+
+
+.searchbar{
+	margin-left: 30%;
+	margin-right: 10%
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  background: var(--search);
+  padding: 5px;
+  height: 26px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-family: var(--defFont);
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border:none;
+  background: var(--search);
+  text-align: center;
+  color: var(--white);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 18%;
+  margin-top: 1%;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+}
+::placeholder{
+	color: white;
+	font-family: var(--defFont);
+}
+.bell{
+	margin: 4% 4% 0% 2%;
+}
+.bell a{
+	color: var(--white);
+	font-size: 2rem;
+}
+.bell a:hover{
+	color: var(--red);
+	font-size: 2.1rem;
+}
+.user{
+	margin: 4% 4% 0% 2%;
+}
+.user a{
+	color: var(--white);
+	font-size: 2rem;
+}
+.user a:hover{
+	color: var(--red);
+	font-size: 2.1rem;
+}
+
+
+
+/* ----------------------XX--------------navbar-----------------XX--------------- */
+/*---------------------------------------------main--------------------------------------------*/
+#container{
+	margin-top: 4vh;
+	width: 100vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+}
+/*-----------------------X----------------------main--------------X------------------------------*/
+/*---------------------------------------------main--------------------------------------------*/
+main{
+	width: 60vw;
+	height: fit-content;
+	margin-left: 5vw;
+}
+/*-----------------------------------------front-artist---------------------------------------------*/
+#front{
+	width: 60vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#front-img{
+    position: relative;
+	width: 25vw;
+	height: 50vh;
+	margin-right: 2vw;
+}
+#front-img img:hover{
+	filter: brightness(50%);
+	cursor: pointer;
+}
+.play-button{
+	color: var(--white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#front-img:hover :not(img){
+	transform: scale(2.5);
+}
+#front-img img{
+	width: 100%;
+	height: 100%;
+}
+#front-des{
+	width: 31vw;
+	height: fit-content;
+	margin-right: 2vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#front-head1{
+	margin-top: 3vh;
+	font-size: 2.5rem;
+	font-family: var(--defFont);
+	font-weight: 700;
+	color: var(--white);
+}
+#front-head2{
+	margin-top: 1vh;
+	font-size: 1.8rem;
+	font-family: var(--defFont);
+	font-weight: 400;
+	color: var(--white);
+}
+#front-text{
+	margin-top: 1vh;
+	font-size: 1.2rem;
+	font-family: var(--defFont);
+	font-weight: 300;
+	color: var(--white);
+}
+
+#front-button{
+	margin-top: 1vh;
+	display: flex;
+}
+.btn-grad{
+	background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49  51%, #3CA55C  100%)
+}
+.btn-grad{
+	font-family: var(--defFont);
+	font-size: 1.3rem;
+	font-weight: 700;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+	cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+         .btn-grad1 {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+         .btn-grad1 {
+         	font-family: var(--defFont);
+	        font-size: 1.1rem;
+	m       font-weight: 400;
+            margin: 20px;
+            padding: 10px 35px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 150% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad1:hover {
+          	cursor: pointer;
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+#front-text-last{
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+	font-size: 1.3rem;
+	font-family: var(--defFont);
+	color: var(--white);
+}
+/*-------------------X----------------------front-artist---------------X------------------------------*/
+
+/*------------------------XX---------------------main---------------XX-----------------------------*/
+/*---------------------------------------------aside--------------------------------------------*/
+aside{
+	width: 30vw;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+}
+/*-------------------------XX--------------------aside---------------XX-----------------------------*/
