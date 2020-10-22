@@ -219,6 +219,7 @@ main{
 	color: var(--white);
 }
 #front-text{
+	width: 100%;
 	margin-top: 1vh;
 	font-size: 1.2rem;
 	font-family: var(--defFont);
@@ -287,6 +288,94 @@ main{
 	color: var(--white);
 }
 /*-------------------X----------------------front-artist---------------X------------------------------*/
+/*-------------------------------------------playlist----------------------------------------------------*/
+#playlist{
+	margin-top: 6vh;
+	width: 60vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	
+    margin-bottom: 14vh;
+}
+#playlisthead{
+	margin-top: 2vh;
+	background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.playlistcontent{
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+	margin-top: 2vh;
+	width: 60vw;
+	margin-bottom: 2vh;
+	/*background-color: var(--background);*/
+	background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.playlistserial{
+	font-size: 1.4rem;
+	font-style: var(--defFont);
+	color: var(--white);
+	margin-right: 1vw;
+	margin-left: 2vw;
+	margin-top: 4vh;
+}
+.playlistimg{
+	margin-top: 1vh;
+	width: 9vw;
+	height: 13vh;
+	margin-left: 1vw;
+	margin-right: 3vw;
+	overflow: hidden;
+	margin-bottom: 1vh;
+}
+.playlistimg img{
+	width: 100%;
+	height: 100%;
+}
+.playlistimg:hover{
+	filter: brightness(50%);
+	cursor: pointer;
+}
+.playlistimg img:hover{
+	transform: scale(1.5);
+}
+.playlisttext{
+	width: 16vw;
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+	font-family: var(--defFont);
+}
+.playlisttext-up{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+.playlisttext-down{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+.playlisticon{
+	margin-left: 2vw;
+	margin-right: 2vw;
+	width: 4vw;
+	font-size: 2rem;
+	color: white;
+	margin-top: 4vh;
+}
+.playlisticon:hover{
+	color: var(--background);
+	cursor: pointer;
+}
+/*--------------------X-----------------------playlist------------------X----------------------------------*/
 
 /*------------------------XX---------------------main---------------XX-----------------------------*/
 /*---------------------------------------------aside--------------------------------------------*/
@@ -307,6 +396,7 @@ aside{
 	font-size: 1.7rem;
 	color: var(--white);
 	font-family: var(--defFont);
+	font-weight: 900;
 }
 .aside1container{
 	margin-top: 1vh;
@@ -501,3 +591,205 @@ aside{
 	color: var(--red);
 }
 /*--------------X----------------------audio-box-------------------X------------------------*/
+/*----------------------------------------------media queries------------------------------------------*/
+@media(max-width: 1400px){
+	#front-head1{
+		font-size: 2.2rem;
+	}
+	#front-head2{
+		font-size: 1.6rem;
+	}
+	#front-text{
+		font-size: 1rem;
+	}
+	.btn-grad{
+		font-size: 1rem;
+		margin: 0px;
+		padding: 1px 1px;
+	}
+	#front-text-last{
+		font-size: 1rem;
+	}
+	.brand-icon{
+    	font-size: 1.3rem;
+    }
+    .brand-icon a{
+    	font-size: 1.3rem;
+    }
+    .favourites{
+    	font-size: 1.3rem;
+    }
+    .favourites:hover{
+    	font-size: 1.32rem;
+    }
+    .bell a {
+    font-size: 1.3rem;
+    }
+    .bell a:hover{
+    font-size: 1.32rem;
+    }
+    .user a{
+    font-size: 1.3rem;
+    }
+    .user a:hover{
+    font-size: 1.32rem;
+    }
+    .text-up{
+    	font-size: 1.2rem;
+    }
+    .text-down{
+    	font-size: 1rem;
+    }
+}
+@media(max-width: 1000px){
+	.bell a {
+    font-size: 1.1rem;
+    }
+    .bell a:hover{
+    font-size: 1.12rem;
+    }
+    .user a{
+    font-size: 1.1rem;
+    }
+    .user a:hover{
+    font-size: 1.12rem;
+    }
+    .searchbar{
+		visibility: collapse;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+    nav{
+    	margin-left: 0px;
+    }
+    #container{
+    	display: block;
+    }
+    main{
+    	width: 90vw;
+    }
+    #front{
+    	width: 90vw;
+    }
+    #front-img{
+    	width: 40vw;
+    }
+    #front-des{
+    	width: 45vw;
+    }
+    #playlist{
+    	width: 90vw;
+    }
+    .playlistcontent{
+    	width: 90vw;
+    }
+    .playlisticon{
+    	margin-left: 4vw;
+    	margin-right: 4vw;
+    	font-size: 1.7rem;
+    }
+    .playlisttext{
+    	width: 30vw;
+    }
+    .playlistimg{
+    	width: 15vw;
+    }
+    aside{
+    	width: 90vw;
+    }
+    #aside1{
+    	width: 90vw;
+    }
+    #aside2{
+    	width: 90vw;
+    }
+    .aside1container{
+    	width: 90vw;
+    }
+    .aside1content{
+    	width: 90vw;
+    }
+    .asideimg{
+    	height: 18vh;
+    	width: 30vw;
+    }
+    .asidetext{
+    	width: 45vw;
+    }
+    .aside1icon{
+    	margin-top: 4vh;
+    }
+    #sound3{
+		margin-left: 4%;
+	}
+	#song_des{
+		width: 40%;
+	}
+	#sound{
+		width: 20%;
+	}
+	.qelementheart{
+		width: 8%;
+	}
+	#song_text{
+    	font-size: 1.1rem;
+    }
+}
+@media(max-width: 750px){
+	#song_text{
+    	font-size: 1rem;
+    }
+}
+@media(max-width: 500px){
+	#container{
+		margin-top: 10vh;
+	}
+	#controls-up a{
+    	font-size: 1.25rem;
+    }
+    #sound{
+		visibility: collapse;
+	}
+	#song_text{
+    	font-size: .9rem;
+    }
+	#song_photo{
+		width: 50%;
+	}
+	#song_des{
+		width: 50%;
+	}
+	#controls{
+		width: 80%;
+		margin-left: 5%;
+	}
+	.time{
+		font-size: 1rem;
+	}
+	#front{
+		display: block;
+	}
+	#front-img{
+		width: 90vw;
+	}
+	#front-des{
+		width: 90vw;
+	}
+	.playlistimg{
+		width: 28vw;
+	}
+	.playlisttext{
+		width: 25vw;
+	}
+	.playlisttext-up{
+		font-size: 1.2rem;
+	}
+	.playlisttext-down{
+		font-size: 1rem;
+	}
+	.playlisticon{
+		font-size: 1.2rem;
+		margin-right: 2vw;
+		margin-left: 2vw;
+	}
+}
