@@ -177,7 +177,6 @@ main{
 #front-img{
     position: relative;
 	width: 25vw;
-	height: 50vh;
 	margin-right: 2vw;
 }
 #front-img img:hover{
