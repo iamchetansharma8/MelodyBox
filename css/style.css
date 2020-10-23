@@ -38,17 +38,16 @@ body{
 .brand-icon{
 	font-size: 2rem;
 	margin-top: -.5rem;
+	font-weight: bolder;
 }
 .favourites{
 	margin-left: 4%;
 	margin-right: 10%;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	margin-top: 0%;
 }
 .favourites:hover{
-	font-size: 1.9rem;
 	cursor: pointer;
-	margin-right: 9.6%;
 }
 .circular:hover{
 	box-shadow: 0rem 0rem 0.375rem 0.25rem rgba(230,196,196,0.3);
@@ -245,7 +244,7 @@ main{
 .latest-head{
 	color: var(--white);
 	font-family: var(--defFont);
-	font-size: 2rem;
+	font-size: 1.7rem;
 	width: 60vw;
 	margin-top: 1vh;
 	margin-left: 2vw;
@@ -301,7 +300,7 @@ main{
 	width: 10vw;
 	margin-top:1vh;
 	font-family: var(--defFont);
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	color: var(--white);
 	height: 9vh;
 	/*background-color: pink;*/
@@ -313,7 +312,7 @@ main{
 	width: 10vw;
 	margin-top: 1vh;
 	font-family: var(--defFont);
-	font-size: 1.4rem;
+	font-size: 1.25rem;
 	color: var(--lightgrey);
 	height: 9vh;
 	/*background-color: red;*/
@@ -330,7 +329,7 @@ main{
 .latest-icon1{
 	padding-left: 5vw;
 	color: var(--lightgrey);
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	margin-top: .5vh;
 	height: 7vh;
 	width: 7vw;
@@ -340,7 +339,7 @@ main{
 }
 .latest-icon-dur{
 	color: var(--lightgrey);
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	padding-left: 4.4vw;
 	height: 9vh;
 	width: 7vw;
@@ -576,7 +575,6 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 	height: fit-content;
 	width: 100%;
 	bottom: 0;
@@ -687,7 +685,7 @@ aside{
 }
 #qhead1{
 	color: var(--white);
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-family: var(--defFont);
 	margin-bottom: 2rem;
 	font-weight: bold;
@@ -713,7 +711,7 @@ aside{
 #qhead22:hover{
 	color: white;
 }
-.qelement{
+.qelement{1.3rem
 	margin-bottom: 2vh;
 	display: flex;
 	flex-direction: row;
@@ -747,7 +745,7 @@ aside{
 	padding-top: 3%;
 	font-family: var(--defFont);
 	color: var(--white);
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 }
 .text-up:hover{
 	color: var(--brand-color);
@@ -756,18 +754,18 @@ aside{
 	height: 50%;
 	font-family: var(--defFont);
 	color: var(--lightgrey);
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 .qelementHeart{
 	height: 100%;
 	width: 20%;
-	font-size: 2.3rem;
+	font-size: 2rem;
 	color: var(--lightgrey);
 	padding-top: 2%;
 	/*background-color: violet;*/
 }
 .qelementHeart:hover{
-	font-size: 2.4rem;
+	font-size: 2.1rem;
 	color: var(--red);
 }
 #qimg1{
@@ -825,7 +823,7 @@ aside{
 		font-size: 1.1rem;
 	}
 	.text-down{
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 	#qhead21{
 	    font-size: 1.2rem;
@@ -845,10 +843,10 @@ aside{
     	font-size: 1.7rem;
     }
     .brand-icon{
-    	font-size: 1.3rem;
+    	font-size: 1.5rem;
     }
     .brand-icon a{
-    	font-size: 1.3rem;
+    	font-size: 1.5rem;
     }
     .favourites{
     	font-size: 1.3rem;
@@ -919,10 +917,10 @@ aside{
 	}
 	
 	.text-up{
-		font-size: 1.35rem;
+		font-size: 1.3rem;
 	}
 	.text-down{
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 	}
 	.qelementText{
 		width: 62%;
@@ -937,7 +935,7 @@ aside{
 	}
 	#qhead1{
 		margin: auto;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 	#qhead2{
 		visibility: hidden;
@@ -956,6 +954,7 @@ aside{
 	}
 	#albums{
 		width: 90vw;
+		margin-bottom: 0vh;
 	}
 	#latest{
 		width: 90vw;
@@ -1005,13 +1004,22 @@ aside{
     }
 }
 @media(max-width: 500px){
+	#mood{
+		flex-direction: column;
+		align-items: center;
+	}
 	.moodcontentimgs{
-		width: 28vw;
+		width: 35vw;
 	}
 	#moodhead{
 		width: 40vw;
 		font-size: 1.2rem;
-		margin-top: 18vh;
+		margin-top: 4vh;
+		margin-bottom: 0vh;
+	}
+	#moodcontent{
+		justify-content: center;
+		margin-top: 2vh;
 	}
 	#sound{
 		visibility: collapse;
@@ -1067,9 +1075,36 @@ aside{
     #controls-up a{
     	font-size: 1.25rem;
     }
+    .text-up{
+    	font-size: 1.2rem;
+    }
+    .text-down{
+    	font-size: 1rem;
+    }
+ 	.favourites{
+		visibility: collapse;
+		margin-left: 6vw;
+		margin-right: 0px;
+		width: 0px;
+	}
+	main{
+		margin-top: 0vh;
+	}
+}
+@media(max-width: 300px){
+	.bell{
+		visibility: collapse;
+		width: 0vw;
+	}
+	.user{
+		visibility: collapse;
+		width: 0vw;
+	}
+	.text-up{
+		font-size: 1rem;
+	}
+	.text-down{
+		font-size: .8rem;
+	}
 }
 /*--------------X-------------------------------------Media Queries-------------X-------------------------*/
-/*
-background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-*/
