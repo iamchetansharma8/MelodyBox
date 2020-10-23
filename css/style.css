@@ -19,6 +19,7 @@ body{
 }
 /* -----------------X---------------------CSS Variables---------------X---------*/
 /*-----------Global------------------------------------------*/
+/*----------horizontal list-----------------------------------------*/
 .horiz-list{
 	list-style: none;
 	flex-direction: row;
@@ -26,11 +27,14 @@ body{
 	margin: 0px;
 	margin-top: 4vh;
 }
+
 .horiz-list li{
 	color: var(--white);
 	font-family: var(--defFont);
 	margin-top: 2%;
 }
+/*-----XX-----horizontal list---------------------XX--------------------*/
+
 .brand-icon a{
 	color: var(--brand-color);
 	font-size: 2rem;margin-right: .5rem;
@@ -76,7 +80,7 @@ nav{
 	height: 7vh;
 }
 
-
+/* ---------------------searchbar------------------------------------------*/
 
 .searchbar{
 	margin-left: 30%;
@@ -125,6 +129,11 @@ nav{
 	color: white;
 	font-family: var(--defFont);
 }
+/* -----------XX----------searchbar------------------------------------------*/
+
+
+/*-------------navigation menu icons-------------------------------------------*/
+
 .bell{
 	margin: 4% 4% 0% 2%;
 }
@@ -147,6 +156,8 @@ nav{
 	color: var(--red);
 	font-size: 2.1rem;
 }
+
+/*---------XX----navigation menu icons------------------XX-------------------------*/
 
 
 
@@ -197,6 +208,8 @@ main{
 	cursor: pointer;
 	transition: transform 0.4s ease-in-out;
 }
+
+/* For adding 3D carousel effects in the page*/
 #s1:checked ~ #slide4, #s2:checked ~ #slide5,
 #s3:checked ~ #slide1, #s4:checked ~ #slide2,
 #s5:checked ~ #slide3{
@@ -227,11 +240,14 @@ main{
 	box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 	transform: translate3d(30%,0,-200px);
 }
-/*---------------------X--------------popular-----------------X------------https://wallpapercave.com/wp/wp4401241.jpg--------*/
 
-/*-----------------------------------aside-------------------------------------*/
-/*---------------------X--------------aside--------------------X-----------------*/
+/*---------------------X--------------popular-----------------X------------------------*/
+
+
+
+
 /*-----------------------------------latest-------------------------------------*/
+
 #latest{
 	height: fit-content;
 	width: 62vw;
@@ -261,6 +277,9 @@ main{
 	flex-direction: row;
 	cursor: pointer;
 }
+
+/*-----------lcl and lcr are made to adjust separate margins for left and right margins for left and right images of latest section respectively--------*/
+
 .lcl{
 	margin-left: 2.5vw;
 	margin-right: 1.5vw;
@@ -344,8 +363,13 @@ main{
 	height: 9vh;
 	width: 7vw;
 }
+
 /*------------------------X-----------latest---------------X----------------------*/
+
+
+
 /*-----------------------------------artists-------------------------------------*/
+
 #artists{
 	height: fit-content;
 	width: 62vw;
@@ -392,8 +416,14 @@ main{
 .linkTo{
 	text-decoration: none;
 }
+
 /*---------------------X--------------artists------------------X-------------------*/
+
+
+
+
 /*-----------------------------------genre-------------------------------------*/
+
 #genre{
 	height: fit-content;
 	display: flex;
@@ -418,19 +448,31 @@ main{
 #genre-img5{
 	background-image: url(../assets/genre-img5.jpg);
 }
+
 /*---------------------X--------------genre-----------------X--------------------*/
+
+
+
+
+
+
 /*-------------------------------------------------------mood-----------------------------------------------------*/
+
 #mood{
+	/*-------------------gradient for mood section------------------*/
+
 	/*background-image: linear-gradient( 292.9deg,  rgba(254,105,241,1) 28.8%, rgba(182,44,248,1) 70.4% );*/
 	background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+	/*----------XX---------gradient for mood section------XX------------*/
+
 	width: 62vw;
 	height: fit-content;
 	display: flex;
+	/*=======Direction willbe changed to column by media queries in mobile view===================*/
 	flex-direction: row;
-	
 	margin: 5vh 3vw 0vh 0vw;
 	overflow: hidden;
 }
@@ -438,8 +480,7 @@ main{
 	text-align: center;
 	margin: 8vh 1vw 2vh 2vw;
 	background-color: #F4D03F;
-background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	height: 11vh;
 	color: var(--white);
 	font-size: 2rem;
@@ -448,8 +489,12 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	padding-top: 8vh;
 	transition: transform .2s ease-in-out;
 }
+
+/*==============When hoverd over mood heading color of text mood as well as background gradient will change along with rise in scale======*/
+
 #moodhead:hover{
 	transform: scale(1.35);
+	/*======on hover new background gradient==================*/
 	background-image: radial-gradient( circle 929px at 0.6% 1.3%,  rgba(248,251,10,1) 0%, rgba(248,47,47,1) 82.6% );
 	color: var(--background-color);
 	cursor: pointer;
@@ -488,9 +533,15 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	filter: brightness(40%);
 	cursor: pointer;
 }
+
 /*----------------------X---------------------------------mood-------------------------X----------------------------*/
 
+
+
+
+
 /*-----------------------------------pahari songs-------------------------------------*/
+
 #pahari{
 	display: flex;
 	flex-direction: row;
@@ -516,7 +567,11 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	background-image: url(../assets/pahariimg5.jpg);
 }
 /*---------------------X--------------pahari songs--------------X-----------------------*/
+
+
+
 /*-----------------------------------popular albums-------------------------------------*/
+
 #albums{
 	height: fit-content;
 	width: 62vw;
@@ -542,6 +597,7 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 	font-size: 3rem;
 	color: white;
 }
+/* -----------class to show play button over the image--------*/
 .er{
 	position: absolute;
 	top:35%;
@@ -565,7 +621,13 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 #album-img5{
 	background-image: url(../assets/albumi5.jpg);
 }
+
 /*-------------X----------------------popular albums-----------------X--------------------*/
+
+
+
+
+
 /*------------------------------------audio-box-------------------------------------------*/
 
 #play{
@@ -577,13 +639,14 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: fit-content;
 	width: 100%;
+	/*-------to attach play section to bottom------------------*/
 	bottom: 0;
+	/*----------------fixed to bottom permanently-------------------------------*/
 	position: fixed;
 }
 #song_des{
 	margin-left: 5%;
 	width: 20%;
-	
 	display: flex;
 	flex-direction: row;
 }
@@ -671,8 +734,17 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 }
 /*--------------X----------------------audio-box-------------------X------------------------*/
 
+
+
 /*------------X----------------------------main-------------------------------------X--------------------*/
+
+
+
+
+
 /*----------------------------------------aside-------------------------------------------*/
+
+
 aside{
 	width: 25vw;
 	height: fit-content;
@@ -816,8 +888,15 @@ aside{
 #qimg16{
 	background-image: url(../assets/qi16.jpg);
 }
+
+
 /*-------------X---------------------------aside--------------------X-----------------------*/
+
+
+
+
 /*---------------------------------------------------Media Queries--------------------------------------*/
+/*-------------Changes for screen size less than equal to 1450 px--------------------------------------*/
 @media(max-width: 1450px){
 	.text-up{
 		font-size: 1.1rem;
@@ -888,6 +967,8 @@ aside{
     	font-size: 1rem;
     }
 }
+/*-------------Changes for screen size less than equal to 1000 px--------------------------------------*/
+
 @media(max-width: 1000px){
 	#mood{
 		width: 90vw;
@@ -994,6 +1075,9 @@ aside{
     	font-size: 1.1rem;
     }
 }
+
+/*-------------Changes for screen size less than equal to 750 px--------------------------------------*/
+
 @media(max-width: 750px){
 	#popular{
 		width: 100%;
@@ -1003,6 +1087,10 @@ aside{
     	font-size: 1rem;
     }
 }
+
+/*-------------Changes for screen size less than equal to 500 px--------------------------------------*/
+
+
 @media(max-width: 500px){
 	#mood{
 		flex-direction: column;
@@ -1091,6 +1179,10 @@ aside{
 		margin-top: 0vh;
 	}
 }
+
+
+/*-------------Changes for screen size less than equal to 300 px--------------------------------------*/
+
 @media(max-width: 300px){
 	.bell{
 		visibility: collapse;

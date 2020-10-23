@@ -16,7 +16,9 @@
 	<link rel="icon" type="image/x-icon" href="./assets/musicicon.png">
 </head>
 <body>
+
 	<!-------------------------nav---------------------------------------------------------------->
+
 	<nav>
 		<ul class="horiz-list">
 			<li class="brand-icon"><a href="#"><i class="fas fa-headphones-alt"></i></a>Melody Box</li>
@@ -35,8 +37,19 @@
 			<li class="user"><a><i class="far fa-user-circle"></i></a></li>
 		</ul>
 	</nav>
+
 	<!------------------------XX-----------------------nav------------------------XX------------------------->
+
+
+
+	<!-- --------------------------------------------- container---------------------------------------------------- -->
+
+    <!-- There is a div named container inside which contain three divs : 1. main which contains main content of the webpage, aside section which contains queue 
+	of music and play section which contains the controls for playing music. The display of container is flex with direction set as row -->
+
+
 	<div id="container">
+
 	<!---------------------------------------------main-------------------------------------------->
 	<main>
 		<section id="front">
@@ -60,6 +73,12 @@
 			    </div>
 			</div>
 		</section>
+
+
+
+
+		<!----------------------------------------playlist----------------------------------------------->
+
 		<section id="playlist">
 			<div class="asidehead" id="playlisthead">Playlist</div>
 			<div class="playlistcontent">
@@ -118,9 +137,18 @@
 				<div class="playlisticon"><i class="fas fa-random"></i></div>
 			</div>
 		</section>
+
+		<!-------------------XX---------------------playlist------------------XX----------------------------->
+
 	</main>
+
 	<!---------------------XX------------------------main------------------XX-------------------------->
+
+
+
 	<!---------------------------------------------aside-------------------------------------------->
+
+	<!-- ==========display is set flex with direction as column========================-->
 	<aside>
 		<div id="aside1">
 			<div class="asidehead">Popular Songs</div>
@@ -243,7 +271,17 @@
 			</div>
 		</div>
 	</aside>
+
 	<!---------------------XX------------------------aside------------------XX-------------------------->
+
+
+
+
+
+	<!------------------------------------------------play------------------------------------------------->
+
+	<!-- =============== play is exactly similar to index.html's play section===============--------->
+
 	<section id="play">
 		<div id="song_des">
 			<div id="song_photo">
@@ -288,6 +326,14 @@
             </div>
         </div>
 	</section>
+
+	<!------------------------------------------------play------------------------------------------------->
+
     </div>
+    <!-- --------------------------------------------- container---------------------------------------------------- -->
+
+
+
+
 </body>
 </html>

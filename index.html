@@ -21,6 +21,9 @@
 		<ul class="horiz-list">
 			<li class="brand-icon"><a href="#"><i class="fas fa-headphones-alt"></i></a>Melody Box</li>
 			<li class="favourites">Favourites</li>
+
+			<!-- --------------------------------------------- search bar---------------------------------------------------- -->
+
 			<li class="searchbar">
 				<div class="wrap">
                       <div class="search">
@@ -31,14 +34,36 @@
                       </div>
                 </div>
 			</li>
+
+			<!-- -----XX---------------------------------------- search bar--------------------XX-------------------------------- -->
+
+
 			<li class="bell"><a href="#"><i class="far fa-bell"></i></a></li>
 			<li class="user"><a><i class="far fa-user-circle"></i></a></li>
 		</ul>
 	</nav>
 	<!-- ----X----------------------------------------- navigation menu---------------------------------X------------------- -->
+
+
+	<!-- There is a div named container inside which contain three divs : 1. main which contains main content of the webpage, aside section which contains queue 
+	of music and play section which contains the controls for playing music. The display of container is flex with direction set as row -->
+
+
+	<!-- --------------------------------------------- container---------------------------------------------------- -->
+
+
 	<div id="container">
 	<!--------------------------------------------------main-------------------------------------------------------------------->
+
+
+	<!-- =======width set as 65vw but for screen width below 1000px width is set to be 95vw================= -->
+
+
 	<main>
+
+	<!-- --------------------------------------popular ==section contains 3D carausel==--------------------------------- -->
+
+
 	<section id="popular">
 		<input type="radio" name="slider" id="s1">
 		<input type="radio" name="slider" id="s2">
@@ -61,6 +86,18 @@
 			<img class="circular" src="./assets/populari5.jpg" height="100%" width="100%">
 		</label>
 	</section>	
+	<!-- ---------------------------XX-----------popular---------------XX---------------------------------->
+
+
+	
+
+	<!-- ----------------------------------------latest----------------------------------------------------->
+
+
+	<!-- ===Dispaly set as flex with direction row and flex wrap:wrap, width will be increased below 1000px to 90vw, set ============
+		in accordance with main section width ========================------->
+
+
 	<section id="latest">
 		<div class="latest-head">Latest Release</div>
 		<div class="latest-content lcl">
@@ -108,6 +145,15 @@
 			</div>
 		</div>
 	</section>
+	<!-- -------XX---------------------------------latest-----------------XX------------------------------------>
+
+	<!-- --------------------------artist------------------------------------------------------------------>
+
+
+	<!-- =====circular artist images inside div , div's display set as flex with direction as row clicking on images will take to second page of the website
+		, named playlists ======-->
+
+
 	<section id="artists">
 		<div class="latest-head">Popular Artists</div>
 		<a class="linkTo" href="./playlists.html">
@@ -151,6 +197,11 @@
 		</div>
 	    </a>
 	</section>
+
+	<!-- ------------XX--------------artist---------------------------------XX--------------------------------->
+
+	<!-- --------------------------genre------------------------------------------------------------------>
+
 	<section id="genre">
 		<div class="latest-head">Genres</div>
 		<div class="artist-content">
@@ -184,6 +235,12 @@
 			<div class="artist-text">Folk</div>
 		</div>
 	</section>
+
+
+	<!-- -------------XX-------------genre-------------------------------XX----------------------------------->
+
+    <!-- ----------------------------mood------------------------------------------------->
+
 	<section id="mood">
 		<div id="moodhead" class="circular">MOOD</div>
 		<div id="moodcontent">
@@ -213,6 +270,11 @@
 			</div>
 		</div>
 	</section>
+
+	    <!-- -------------XX---------------mood--------------------------XX----------------------->
+
+    <!-- ----------------------------pahari------------------------------------------------->
+
 	<section id="pahari">
 		<div class="latest-head">Popular Himachali Music</div>
 		<div class="artist-content">
@@ -246,6 +308,11 @@
 			<div class="artist-text">Dunge Naluye</div>
 		</div>
 	</section>
+
+	    <!-- -----------XX-----------------pahari--------------------------XX----------------------->
+
+    <!-- ----------------------------albums------------------------------------------------->
+
 	<section id="albums">
 		<div class="latest-head">Popular Albums</div>
 		<div class="artist-content">
@@ -279,9 +346,21 @@
 			<div class="artist-text">1990's Retro</div>
 		</div>
 	</section>
+
+	    <!-- --------XX--------------------albums--------------------------------XX----------------->
+
 	</main>
+
 	<!---------------------------------X-----------------main-----------------------------------X--------------------------------->
+
+
+
 	<!-- ---------------------------------------------------aside------------------------------------------------------------ -->
+
+	<!-- ======Display is set as flex with direction column and occupies 25vw in full screen desktop -->
+
+	<!-- =====When width is below 1000px it will occupy 95vw=========================================-->
+
 	<aside>
 		<div id="qhead1">My Playlist</div>
 		<div id="qhead2">
@@ -450,6 +529,18 @@
 		</div>
 	</aside>
     <!-- -------------------------------X--------------------aside--------------------------------X---------------------------- -->
+
+
+
+
+
+
+
+    <!-- --------------------------------------------- play section---------------------------------------------------- -->
+    <!-- ============It contains the controls for playing music it's position is set as fixed, display is set as flex with direction row ================== -->
+
+
+
    <section id="play">
 		<div id="song_des">
 			<div id="song_photo">
@@ -482,6 +573,8 @@
                 </div>
             </div>
         </div>
+        <!------------------------sound------------------------------------>
+        <!--=====================will be hidden for screen size below 500px=======================--->
         <div id="sound">
             <div>
         		<a href="#"><i class="fas fa-volume-up"></i></a>
@@ -493,12 +586,12 @@
         	    <a href="#"><i class="fas fa-list-ul"></i></a>
             </div>
         </div>
+        <!----------------------XX-----------sound---------XX--------------->
 	</section>
+	<!-- --------------------------------------------- play section---------------------------------------------------- -->
+
     </div>
+    <!-- ------XX--------------------------------------- container----------------XX------------------------------------ -->
+
 </body>
 </html>
-<!-- <a class="grey-out" href="#"><i class="fa fa-retweet"></i></a>
-	        <a href="#"><i class="fa fa-backward"></i></a>
-	        <a href="#"><i class="fa fa-pause hiu"></i></a>
-	        <a href="#"><i class="fa fa-forward"></i></a>
-	        <a href="#"><i class="fa fa-random"></i></a>
