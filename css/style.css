@@ -527,10 +527,11 @@ main{
 	width: 100%;
 	height: 100%;
 	transition: transform .2s ease-in-out;
+	filter: brightness(50%);
 }
 .moodcontentimgs img:hover{
 	transform: scale(1.5);
-	filter: brightness(40%);
+	filter: brightness(20%);
 	cursor: pointer;
 }
 
